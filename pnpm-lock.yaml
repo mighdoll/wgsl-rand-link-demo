@@ -20,9 +20,6 @@ importers:
       '@shoelace-style/shoelace':
         specifier: ^2.18.0
         version: 2.18.0(@types/react@18.3.12)
-      mini-parse:
-        specifier: link:../wgsl-linker/packages/mini-parse
-        version: link:../wgsl-linker/packages/mini-parse
       random-wgsl:
         specifier: link:../random-wgsl
         version: link:../random-wgsl
