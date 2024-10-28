@@ -23,6 +23,9 @@ importers:
       random-wgsl:
         specifier: link:../random-wgsl
         version: link:../random-wgsl
+      random_wgsl:
+        specifier: ^0.1.0
+        version: 0.1.0
       style-mod:
         specifier: ^4.1.2
         version: 4.1.2
@@ -849,6 +852,9 @@ packages:
 
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
+
+  random_wgsl@0.1.0:
+    resolution: {integrity: sha512-LCt6LTlgIdbv77koqWBeYfChnq7MNqEMd2yytG4fbXVEOhovszrVaRlaiRvl7j3dw8KKBK1gtmZL53MLcPC1dg==}
 
   readdirp@3.6.0:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
@@ -1783,6 +1789,8 @@ snapshots:
   qr-creator@1.0.0: {}
 
   queue-microtask@1.2.3: {}
+
+  random_wgsl@0.1.0: {}
 
   readdirp@3.6.0:
     dependencies:

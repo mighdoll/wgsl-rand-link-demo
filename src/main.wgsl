@@ -1,3 +1,5 @@
+import random_wgsl/pcg_2u_3f;
+
 struct Uniforms { frame: u32 }
 
 @binding(0) @group(0) var<uniform> u: Uniforms;
@@ -16,14 +18,6 @@ fn vertexMain(@builtin(vertex_index) vertex_index: u32) -> @builtin(position) ve
 
 @fragment
 fn fragmentMain(@builtin(position) pos: vec4f) -> @location(0) vec4f {
-    let frame = f32(u.frame); 
-    let r = quickRandom(frame + pos.x);
-    let g = quickRandom(frame + pos.y);
-    let b = quickRandom(frame + pos.x + pos.y);
-    return vec4f(r,g,b, 1.);
-}
-
-// suggested by GitHub Copilot
-fn quickRandom(seed: f32) -> f32 {
-    return fract(sin(seed) * 43758.5453);
+    let rand = pcg_2u_3f(vec2u(pos.xy) + u.frame);
+    return vec4f(rand, 1.);
 }

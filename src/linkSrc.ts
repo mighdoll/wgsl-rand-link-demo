@@ -1,4 +1,4 @@
-import randBundle from "random-wgsl";
+import randBundle from "random_wgsl";
 import { ModuleRegistry } from "wgsl-linker";
 
 const wgsl: Record<string, string> = import.meta.glob("./*.wgsl", {
