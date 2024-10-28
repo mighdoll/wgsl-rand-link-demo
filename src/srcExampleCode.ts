@@ -1,5 +1,5 @@
 import src from "./main.wgsl?raw";
-import bundle from "random-wgsl";
+import bundle from "random_wgsl";
 
 
 /** collect src code for demo display */
