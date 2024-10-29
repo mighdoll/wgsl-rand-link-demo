@@ -1,4 +1,3 @@
-import randBundle from "random_wgsl";
 import { ModuleRegistry } from "wgsl-linker";
 
 const wgsl: Record<string, string> = import.meta.glob("./*.wgsl", {
@@ -12,6 +11,6 @@ const wgsl: Record<string, string> = import.meta.glob("./*.wgsl", {
  * @return linked code
  */
 export function linkDemoSrc(): string {
-  const registry = new ModuleRegistry({ wgsl, libs: [randBundle] });
+  const registry = new ModuleRegistry({ wgsl });
   return registry.link("./main");
 }
